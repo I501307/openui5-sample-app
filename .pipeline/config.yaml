@@ -1,0 +1,15 @@
+general:
+  inferBuildTool: true
+  verbose: true
+  buildTool: 'npm'
+  
+service:
+  buildToolVersion: 'N14'
+  cloudConnectors:
+    transportRequestUploadCTS: 
+      credentialId: "cc-crd1"
+
+stages:
+  Build:
+    dockerImage: 'ppiper/node-browsers@sha256:1b13e31b56d1ac1707db42b9b83bf925aa5840b35046207974e10d3c1801a4f9'
+    npmExecuteLint: false
